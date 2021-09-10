@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CO1108</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container"><a class="navbar-brand" href="#" style="color: rgba(255,255,255,0.9);">CO1108 <strong>Quick Revision</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: #3cb371;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" style="color: rgba(255,250,250,0.5);">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="dfa.html" style="color: rgba(60,179,133,0.9);">DFA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="nfa.html" style="color: rgba(255,250,250,0.5);">NFA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="reg_gram.html" style="color: rgba(255,250,250,0.5);">Regular Grammar</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="pda.html" style="color: rgba(255,250,250,0.5);">PDA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="cfg.html" style="color: rgba(255,250,250,0.5);">CFG</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div class="container header">
+        <h1>Deterministic Finite Automata</h1>
+    </div>
+    <div class="container description-video">
+        <div class="row">
+            <div class="col-lg-4 description" id="desciption">
+                <h4 style="color: rgb(255,255,255);"><strong>Brief Description of DFAs:</strong>&nbsp;</h4>
+                <p>An automaton is a theoretical machine which takes in an input and indicates whether this is accepted or not. DFA&nbsp;is good for accepting a language and allows you to compute a language. However, its simplicity does mean it is the least
+                    capable automata out of the various ones discovered.&nbsp;Deals with regular grammars.&nbsp;</p>
+                <p>It has several components:&nbsp;</p>
+                <ul>
+                    <li>Alphabet ( Collection of symbols to construct strings in your language)&nbsp;</li>
+                    <li>Set of states (Records your steps and represents the memory of your machine)&nbsp;</li>
+                    <li>Starting state (Initial state – Machine boots up)&nbsp;</li>
+                    <li>Transitions (partial) function</li>
+                    <li>Set of final (accepting) states (Machine terminates, string is accepted)&nbsp;</li>
+                </ul>
+            </div>
+            <div class="col"><iframe width="600" height="386" src="https://www.youtube.com/embed/-uLtc7AhWfk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h3 style="color: rgb(255,255,255);">Key point from the tutorial:&nbsp;</h3>
+                <p>Problem with DFA is that you CANNOT have multiple transitions from a single state.&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <div class="container sample-questions">
+        <div class="row questions">
+            <div class="col questions">
+                <h1>Sample Exam Question</h1><img id="question" src="assets/img/dfa_q.png">
+                <p></p><a id="showAnswer" style="color: #3cb371;background-color: #ffffff;">Show Answer</a>
+                <p></p><a id="hideAnswer" style="background-color: #ffffff;color: #3cb379;">Hide Answer</a>
+                <p></p><img id="answer" src="assets/img/dfa_a.png">
+                <p></p><a id="showExplanation" style="background-color: #ffffff;color: #3cb379;">Show Explanation</a>
+                <p></p><a id="hideExplanation" style="background-color: #ffffff;color: #3cb379;">Hide Explanation</a>
+                <p></p><img id="explanation" src="assets/img/dfa_explanation.png" width="800" height="900"></div>
+        </div>
+    </div>
+    <footer>
+        <p id="footer_text">Created by Group 16 - CO2201</p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/co1108.js"></script>
+</body>
+
+</html>

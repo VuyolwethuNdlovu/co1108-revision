@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CO1108</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container"><a class="navbar-brand" href="#" style="color: rgba(255,255,255,0.9);">CO1108 <strong>Quick Revision</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: #3cb371;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" style="color: rgba(255,250,250,0.5);">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgba(255,250,255,0.5);" href="dfa.html">DFA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="nfa.html" style="color: rgba(60,179,113,0.9);">NFA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="reg_gram.html" style="color: rgba(255,250,250,0.5);">Regular Grammar</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="pda.html" style="color: rgba(255,250,250,0.5);">PDA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="cfg.html" style="color: rgba(255,250,250,0.5);">CFG</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div class="container header">
+        <h1>&nbsp;Nondeterministic Finite Automata</h1>
+    </div>
+    <div class="container description-video">
+        <div class="row">
+            <div class="col-lg-3 description">
+                <h4 style="color: rgb(255,255,255);"><strong>Brief Description of NFAs:</strong>&nbsp;</h4>
+                <p>An NFA has increased functionality compared to DFA. It<br>allows more than one transition (choice) from a state and can include an empty<br>string transition. Both DFA and NFA are similar but NFA’s are more concise and<br>allow you to
+                    use fewer states when solving a language.<br><br><br><br><br><br></p>
+            </div>
+            <div class="col video"><iframe width="560" height="315" src="https://www.youtube.com/embed/GdQQAXFLpXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 style="color: rgb(255,255,255);">Key point from the tutorial:&nbsp;</h3>
+                <p>Use {} to refer to multiple states (E.g. {s1,s2})<br><br></p>
+            </div>
+        </div>
+    </div>
+    <div class="container sample-questions">
+        <div class="row questions">
+            <div class="col questions">
+                <h1>Sample Exam Question</h1><img id="question" src="assets/img/nfa_q.png">
+                <p></p><a id="showAnswer" style="color: #3cb371;background-color: #ffffff;">Show Answer</a>
+                <p></p><a id="hideAnswer" style="background-color: #ffffff;color: #3cb379;">Hide Answer</a>
+                <p></p><img id="answer" style="color: #3cb371;background-color: #ffffff;" src="assets/img/nfa_a.png">
+                <p></p><a id="showExplanation" style="background-color: #ffffff;color: #3cb379;">Show Explanation</a>
+                <p></p><a id="hideExplanation" style="color: #3cb379;background-color: #ffffff;">Hide Explanation</a>
+                <p></p>
+                <div id="explanation">
+                    <p>1. From state s0 see what states the transition ‘a’ leads to. This creates the state {s1, s3} in the<br>solution.</p>
+                    <p>2. Trace which states ‘a’ transitions are made to. Hence the state {s3} is created.</p>
+                    <p>3. Trace which states ‘b’ transitions are made to. Hence the self-loop to {s1, s3} in the solution.</p>
+                    <p>4. Trace which states ‘c’ transitions are made to. Hence the transition to s2 from {s1, s3}.</p>
+                    <p>5. S1 has no transitions of ‘a’ however s3 does. Hence the self-loop to s3.</p>
+                    <p>6. From s3 only a ‘c’ transition exists to s2. Hence the transition from s3 to s2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="footer_text">Created by Group 16 - CO2201</p>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/co1108.js"></script>
+</body>
+
+</html>
